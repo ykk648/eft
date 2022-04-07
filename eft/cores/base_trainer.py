@@ -207,7 +207,7 @@ class BaseTrainer(object):
         self.optimizer_backup = copy.deepcopy(self.optimizer.state_dict())
 
     def reloadModel(self):
-        print(">>> Model status has been reloaded to initial!")
+        # print(">>> Model status has been reloaded to initial!")
         # print(sum(sum(self.model.state_dict()['layer3.5.conv3.weight'])))
         # print("checking: {}".format(sum(sum(self.model_backup['layer3.5.conv3.weight']))))
         self.model.load_state_dict(self.model_backup)
