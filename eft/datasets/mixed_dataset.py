@@ -43,10 +43,10 @@ class MixedDataset(torch.utils.data.Dataset):
             length_itw = sum([len(ds) for ds in self.datasets[1:-1]])
             self.length = max([len(ds) for ds in self.datasets])
 
-        elif options.db_set == 'dance_0406':
+        elif options.db_set == 'dance_0420':
             print(">>> Selected DBSet: {}".format(options.db_set))
-            self.dataset_list = [ 'dance_0406']
-            self.dataset_dict = { 'dance_0406': 0}
+            self.dataset_list = [ 'dance_0420']
+            self.dataset_dict = { 'dance_0420': 0}
             self.partition = [1.0]
 
             self.datasets = [BaseDataset(options, ds, **kwargs) for ds in self.dataset_list]

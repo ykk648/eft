@@ -11,7 +11,7 @@ from os.path import join
 ROOT_FOLDER ='./'
 DATASET_NPZ_PATH = ROOT_FOLDER+'preprocessed_db/'
 COCO_ROOT = './data_sets/coco/'
-DANCE_0406_ROOT = './data_sets/dance_0406/'
+DANCE_0420_ROOT = '/mnt/cv_data_ljt/dataset/mmhuman3d/datasets/dy_dance_0420'
 
 H36M_ROOT = '/run/media/hjoo/disk/data/h36m-fetch/human36m_10fps_smplcocoTotalcap26_wShape_img'   #my folder format
 H36M_TEST_ROOT = '/run/media/hjoo/disk/data/h36m-fetch/extracted'         #spin folder format
@@ -76,7 +76,7 @@ DATASET_FILES = [ {'h36m-p1': join(DATASET_NPZ_PATH, 'h36m_valid_protocol1.npz')
                    'lsp-orig3d': join(DATASET_NPZ_PATH, 'lsp3d_11-14_lsp_analysis_100.npz'),
                    'mpii': join(DATASET_NPZ_PATH, 'mpii_train.npz'),
                    'coco': join(DATASET_NPZ_PATH, 'coco_2014_train_12kp.npz'), #coco SAMPLES with more thna 12 kps valid (used in SPIN)
-                   'dance_0406': join(DATASET_NPZ_PATH, 'dance_0406.npz'), #coco SAMPLES with more thna 12 kps valid (used in SPIN)
+                   'dance_0420': join(DATASET_NPZ_PATH, 'dance_0420.npz'), #coco SAMPLES with more thna 12 kps valid (used in SPIN)
                    'coco-val': join(DATASET_NPZ_PATH, 'coco_2014_val_12kp_foot.npz'), #coco SAMPLES with more thna 12 kps valid (used in SPIN)
                    
                    'cocoall': join(DATASET_NPZ_PATH, 'coco_2014_train_6kp.npz'),    #coco SAMPLES with more than 6 kps valid
@@ -145,7 +145,7 @@ DATASET_FOLDERS = {'h36m': H36M_ROOT,
                    'mpi-inf-3dhp-test': MPI_INF_3DHP_ROOT_TEST,
                    'mpii': MPII_ROOT,
                    'coco': COCO_ROOT,   #2014 train
-                   'dance_0406': DANCE_0406_ROOT,   #2014 train
+                   'dance_0420': DANCE_0420_ROOT,   #2014 train
                    'coco-val': COCO_ROOT,   #2014 val
                    'coco2014-val-3d-amt': COCO_ROOT,
                    'cocofoot': COCO_ROOT,
